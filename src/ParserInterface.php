@@ -1,6 +1,6 @@
 <?php
 
-namespace BogdanR\parser;
+namespace Rozumovskiy\parser;
 
 /**
  * @author Victor Zinchenko <zinchenko.us@gmail.com>
