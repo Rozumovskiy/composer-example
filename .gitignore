@@ -1,0 +1,7 @@
+puphpet/config-custom.yaml
+/Vagrantfile
+/.gitattributes
+/composer.phar
+/.vagrant
+/puphpet
+/nbproject/
