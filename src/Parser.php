@@ -6,11 +6,7 @@ namespace Rozumovskiy\parser;
  */
 class Parser implements ParserInterface
 {
-    /**
-     * @param string $url
-     * @param string $tag
-     * @return array
-     */
+    
     public function process(string $tag, string $url): array
     {
         $htmlPage = file_get_contents($url);
@@ -18,7 +14,7 @@ class Parser implements ParserInterface
             return ['Invalid URL'];
         }
         
-        // Regular expression
+        // Regular expression v1.0.0
         preg_match_all('/<' . $tag . '.*?>(.*?)<\/' . $tag . '>/s', $htmlPage, $strings);
         if (empty($strings[1])) {
             return ['There are no such tags on the page'];
